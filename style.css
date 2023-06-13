@@ -1,6 +1,5 @@
 
 *{
-    margin: 1px;
     padding: 0;
     font-family: 'Outfit', sans-serif;
 }
@@ -20,6 +19,7 @@
     background-color: var(--primary-color-background);
 }
 .container{
+    margin-right: 20%;
     padding: 30px;
     position: absolute;
     top: 50%;
@@ -29,7 +29,12 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+
+.image-container {
+    position: relative;
+    display: flex;
 }
 
 .image{
@@ -37,6 +42,12 @@
     max-width: 400px;
     min-width: 300px;
     border-radius: 20px;
+}
+
+.backgroundColor{
+    background-color: var(--secondary-color-text);
+    border-radius: 5%;
+    display: flex;   
 }
 
 .textPrimary{
@@ -101,13 +112,6 @@
     background: gray;
 }
 
-.image-container {
-    position: relative;
-    display: flex;
-    background: var(--secondary-color-text);
-    border-radius: 20px;
-}
-
 .acc-image-container{
     display: flex;
 }
@@ -125,12 +129,21 @@
     opacity: 1;
   }
 
+  .mainDiv{
+        height: auto;
+        width: auto;
+        margin-right: 42%;
+  }
 
   .equilibrium{
     padding-top: 30px;
   }
 
   .mainDiv:hover .textWhite{
+    color: var(--secondary-color-text);
+  }
+
+  .mainDiv2:hover .textWhite{
     color: var(--secondary-color-text);
   }
 
